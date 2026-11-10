@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "hallloop"
+version = "0.1.0"
+description = "Auditable opposite-branch processing for hysteretic Hall sweeps"
+readme = "README.md"
+requires-python = ">=3.10"
+license = "MIT"
+license-files = ["LICENSE"]
+dependencies = ["numpy", "matplotlib>=3.6"]
+
+[project.scripts]
+hallloop = "hallloop.cli:main"
+
+[tool.setuptools]
+packages = ["hallloop"]
